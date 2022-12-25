@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DemoProject</string>
+    <string name="login_page">Login Page</string>
+    <string name="sign_page">Sign Page</string>
+    <string name="enterEmail">Enter Email Adress</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="entermobilenumber">Enter Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="enterusername">Enter User Name</string>
+    <string name="enterconfrom_Password">Enter Confirm Password</string>
+    <string name="error_email">Enter a email</string>
+    <string name="error_pass">Enter a password</string>
+    <string name="correct_email">Enter a email</string>
+    <string name="error_user_name">Enter a User Name</string>
+    <string name="erro_email_adress">Enter email Adress</string>
+    <string name="erro_enter_password">Password not match</string>
+    <string name="erro_enter_confrom_Password">Enter Confirm Password</string>
+    <string name="sucessfull_Login">Sucessfull Login</string>
+    <string name="sucessfull_SignUp">Sucessfull SignUp</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Log Out</string>
+    <string name="email_is_not_match">email and password not match</string>
+    <string name="Profile">Profile</string>
+    <string name="areyousurelogin">Are you sure Login </string>
+    <string name="areyousuresigh">Are you sure Signup </string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="ok">ok</string>
+    <!--use for bUTTON-->
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_up_btn">Sign Up</string>
+
+</resources>

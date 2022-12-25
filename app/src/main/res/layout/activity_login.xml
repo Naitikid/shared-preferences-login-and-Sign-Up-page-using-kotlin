@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity.LoginActivity">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/begin_guideline_margin_Con30dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/dimens_30dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guideline_margin_Con30dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/dimens_30dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guideline_margin_Con30dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/dimens_30dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logo_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_100dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toStartOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/top_guideline_margin_Con30dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_page_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/font"
+            android:text="@string/login_page"
+            android:textSize="@dimen/dimens_20sp"
+            app:layout_constraintEnd_toStartOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/logo_main" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enter_email"
+            style="@style/EdittextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:hint="@string/enterEmail"
+            app:layout_constraintEnd_toStartOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/login_page_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="textEmailAddress"
+                android:maxLines="@integer/maxLines1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterPassword"
+            style="@style/EdittextStyle"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enterPassword"
+            app:layout_constraintEnd_toStartOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/enter_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="textPassword"
+                android:maxLines="@integer/maxLines1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_Activity_btn"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/enterPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="@id/end_guideline_margin_Con30dp"
+            app:layout_constraintStart_toEndOf="@id/begin_guideline_margin_Con30dp"
+            app:layout_constraintTop_toBottomOf="@id/login_Activity_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
